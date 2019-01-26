@@ -8,7 +8,7 @@ import sys
 class Terminator(Thread):
     def __init__(self, argv):
         super().__init__()
-        self.HOST = '118.89.58.129'
+        self.HOST = '127.0.0.1'
         self.PORT = 11226
         self.buffSize = 1024
         if len(argv) >= 3:
@@ -88,5 +88,5 @@ if __name__ == '__main__':
         print("\n")
         print("Usage: python3 client.py [commander|receptor]")
         print("Options:    Host IP    | Port  | buffSize")
-        print("default: 118.89.58.129 | 11226 |   1024  ")
+        print("default: 127.0.0.1 | 11226 |   1024  ")
         print("\n")
