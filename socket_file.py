@@ -52,6 +52,8 @@ class Server_file(object):                                                 #the 
                             os.mkdir(self.path)
                         self.path = os.path.join(self.path,self.file_name)
                         self.file_size = int(file_size)
+         except Excetion as e:
+            pass
     def upload_file_process(self):                                           #After the directory is created, prepare the transfer file
         if self.path!=None:
             with open(self.path,'wb') as fp:
